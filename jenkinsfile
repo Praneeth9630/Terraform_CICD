@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+        stage('init') {
+            steps {
+                sh 'terraform init'
+            }
+        }
+    }
+}
